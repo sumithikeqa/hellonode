@@ -1,7 +1,7 @@
 app:
     name: Hello Node
     code: hellonode
-    notify: appzdev@cloudbourne.co
+    notify: sumit.bansal@hikeqa.com
 
 build:
     version: 0.1
@@ -9,20 +9,20 @@ build:
     build_file: none
     output_files: output/*.zip
     image_template: node-10.22
-    image_name: alpha/nodejs-helloworld
+    image_name: sumithikeqa/nodejs-helloworld
 
 deploy:
-    context: alpha/DEV
+    context: sumithikeqa/DEV
     replicas: 1
     port:
     - 8080
     - 80
     
 monitor:
-    notify: appzops@cloudbourne.co
+    notify: sumit.bansal@hikeqa.com
 
 properties:
     page_title: "React-bootstrap + nodejs-express App"
-    site_url: "https://hellonodejs.appzclient.com/"
+    site_url: "https://hellonodejs.038d9619.lowtouch.cloud/"
     revision: 13
     page_color: Blue
